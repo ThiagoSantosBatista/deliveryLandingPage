@@ -58,12 +58,56 @@ a {
   color: #ff6700;
 }
 .header__nav-item button {
+  cursor: pointer;
   font-weight: bold;
   padding: 1.5rem 2rem;
   border: none;
   border-radius: 2rem;
   color: #fcfcfc;
   background: #ff6700;
+}
+
+.home {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  max-height: 76rem;
+  background: linear-gradient(to top, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(/img/madie-hamilton-Q9yr-cvJr30-unsplash\ 1.png);
+  background-size: cover;
+}
+.home__conteudo {
+  color: #fcfcfc;
+  text-align: center;
+  max-width: 76rem;
+}
+.home__conteudo h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+}
+.home__conteudo p {
+  font-size: 2.5rem;
+  margin-bottom: 7rem;
+  color: rgba(252, 252, 252, 0.85);
+}
+.home__conteudo button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 1.5rem;
+  padding: 2rem 3.5rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  color: #fcfcfc;
+  background: #ff6700;
+  border: 0.2rem solid #fcfcfc;
+}
+
+.laranja {
+  color: #ff6700;
 }
 
 /*# sourceMappingURL=style.css.map */
