@@ -6,18 +6,20 @@
   width: 100%;
   background: hsl(0, 0%, 99%);
   box-shadow: 0 0.1rem 1rem rgb(0, 0, 0, 0.15);
+  z-index: 10;
   &-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 0 13.6rem;
+    padding: 0 13.5rem;
   }
   &__nav-list {
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
     color: black;
   }
   &__nav-item {
@@ -29,8 +31,8 @@
     }
     & button {
       cursor: pointer;
-      font-weight: bold;
-      padding: 1.5rem 2rem;
+      padding: 2rem;
+      font-size: 1.7rem;
       border: none;
       border-radius: 2rem;
       color: #fcfcfc;
