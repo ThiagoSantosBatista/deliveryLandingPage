@@ -1,3 +1,69 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 9rem;
+  width: 100%;
+  background: hsl(0deg, 0%, 99%);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15);
+}
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 13.6rem;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1.8rem;
+  color: black;
+}
+.header__nav-item a {
+  color: black;
+}
+.header__nav-item--laranja a {
+  color: #ff6700;
+}
+.header__nav-item button {
+  font-weight: bold;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: #fcfcfc;
+  background: #ff6700;
+}
 
 /*# sourceMappingURL=style.css.map */

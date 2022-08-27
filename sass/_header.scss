@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 9rem;
+  width: 100%;
+  background: hsl(0, 0%, 99%);
+  box-shadow: 0 0.1rem 1rem rgb(0, 0, 0, 0.15);
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 13.6rem;
+  }
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.8rem;
+    color: black;
+  }
+  &__nav-item {
+    a {
+      color: black;
+    }
+    &--laranja a {
+      color: #ff6700;
+    }
+    & button {
+      font-weight: bold;
+      padding: 1.5rem 2rem;
+      border: none;
+      border-radius: 2rem;
+      color: #fcfcfc;
+      background: #ff6700;
+    }
+  }
+}

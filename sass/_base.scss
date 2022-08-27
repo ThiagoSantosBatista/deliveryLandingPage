@@ -1,0 +1,28 @@
+$font: 'Sora', sans-serif;
+$font-titulos: 'Ubuntu', sans-serif;
+
+*, *::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    max-width: 144rem;
+    margin: 0 auto;
+}
