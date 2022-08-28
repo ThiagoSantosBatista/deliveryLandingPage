@@ -1,28 +1,36 @@
-$font: 'Sora', sans-serif;
-$font-titulos: 'Ubuntu', sans-serif;
+$font: "Sora", sans-serif;
+$font-titulos: "Ubuntu", sans-serif;
 
-*, *::before,*::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $font;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font;
 }
 
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
 }
-body{
-    min-height: 100vh;
+body {
+  min-height: 100vh;
+  background: #fcfcfc;
 }
-li{
-    list-style: none;
+img {
+  max-width: 100%;
+  display: block;
 }
-a{
-    display: inline-block;
-    text-decoration: none;
+li {
+  list-style: none;
 }
-.container{
-    max-width: 144rem;
-    margin: 0 auto;
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
 }

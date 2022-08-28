@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,10 +10,17 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
 }
 
 body {
   min-height: 100vh;
+  background: #fcfcfc;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 li {
@@ -32,7 +41,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  height: 9rem;
+  height: 8rem;
   width: 100%;
   background: hsl(0deg, 0%, 99%);
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15);
@@ -43,7 +52,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0 13.5rem;
+  padding: 0 5%;
 }
 .header__nav-list {
   display: flex;
@@ -61,7 +70,7 @@ a {
 }
 .header__nav-item button {
   cursor: pointer;
-  padding: 2rem;
+  padding: 1.5rem;
   font-size: 1.7rem;
   border: none;
   border-radius: 2rem;
@@ -73,7 +82,7 @@ a {
   display: grid;
   place-items: center;
   height: 100vh;
-  max-height: 76rem;
+  max-height: 75rem;
   background: linear-gradient(to top, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(/img/madie-hamilton-Q9yr-cvJr30-unsplash\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,6 +96,7 @@ a {
   font-family: "Ubuntu", sans-serif;
   font-size: clamp(3rem, 3.7vw, 6rem);
   margin-bottom: 1.8rem;
+  line-height: 1.2;
 }
 .home__conteudo p {
   font-size: 2.5rem;
@@ -109,7 +119,7 @@ a {
   color: #fcfcfc;
   background: #ff6700;
   border: 0.2rem solid #fcfcfc;
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .laranja {
@@ -125,7 +135,7 @@ a {
   align-items: center;
   margin-top: 9.6rem;
   margin-bottom: 9.6rem;
-  padding: 0 13.5rem;
+  padding: 0 5%;
 }
 .vantagens__conteudo-box {
   display: grid;
@@ -146,6 +156,7 @@ a {
 }
 .vantagens__conteudo-box p {
   font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 .sobre {
@@ -156,20 +167,22 @@ a {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 7rem;
-  padding: 8rem 13.5rem;
+  padding: 8rem 5%;
 }
 .sobre-box img {
   max-width: 45rem;
   height: auto;
+  object-fit: cover;
 }
 .sobre__conteudo {
   color: #fcfcfc;
   max-width: 50rem;
 }
 .sobre__conteudo h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 3.7rem;
+  text-transform: uppercase;
   position: relative;
 }
 .sobre__conteudo h2::after {
@@ -184,6 +197,7 @@ a {
 .sobre__conteudo p {
   color: rgba(252, 252, 252, 0.9);
   font-size: 2rem;
+  line-height: 1.5;
   margin-bottom: 5rem;
 }
 .sobre__conteudo button {
@@ -194,6 +208,77 @@ a {
   cursor: pointer;
   padding: 1rem 3rem;
   border-radius: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.categorias {
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+  padding: 9.6rem 5%;
+}
+.categorias__titulo h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 10rem;
+}
+.categorias__titulo h2::after {
+  content: "";
+  width: 7rem;
+  height: 0.2rem;
+  background: black;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.categorias__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+}
+.categorias__items-box {
+  position: relative;
+  cursor: pointer;
+}
+.categorias__items-box p {
+  position: absolute;
+  bottom: 1.5rem;
+  font-size: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fcfcfc;
+  z-index: 1;
+}
+.categorias__items-box--outros {
+  display: grid;
+  place-items: center;
+  width: 37rem;
+  height: 30rem;
+  border-radius: 1rem;
+}
+.categorias__items-box--outros button {
+  padding: 2rem 6rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: #ff6700;
+  border: 0.2rem solid #ff6700;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+}
+.categorias__items-box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
