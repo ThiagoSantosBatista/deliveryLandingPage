@@ -20,10 +20,10 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#sobre">Sobre</a></li>
-                    <li class="header__nav-item"><a href="#categorias">Categorias</a></li>
                     <li class="header__nav-item"><a href="#produtos">Produtos</a></li>
+                    <li class="header__nav-item"><a href="#depoimentos">Depoimentos</a></li>
                     <li class="header__nav-item--laranja "><a href="#">Entrar</a></li>
-                    <li class="header__nav-item"><button>Criar Conta</button></li>
+                    <li class="header__nav-item"><button><a href="#">Criar Conta</a></button></li>
                 </ul>
             </nav>
         </div>
@@ -82,49 +82,73 @@
             <div class="categorias__titulo">
                 <h2>Categorias</h2>
             </div>
-            <div class="categorias__items">
-                <div class="categorias__items-box">
-                    <p>Pizzas</p>
-                    <img src="/img/categorias-pizzas.png" alt="">
-                </div>
-                <div class="categorias__items-box">
-                    <p>Lanches</p>
-                    <img src="/img/categorias-lanches.png" alt="">
-                </div>
-                <div class="categorias__items-box">
-                    <p>Sobremesas</p>
-                    <img src="/img/categorias-sobremesas.png" alt="">
-                </div>
-                <div class="categorias__items-box">
-                    <p>Bebidas</p>
-                    <img src="/img/categorias-bebidas.png" alt="">
-                </div>
-                <div class="categorias__items-box">
-                    <p>Vegetariana</p>
-                    <img src="/img/categorias-vegetariana.png" alt="">
-                </div>
-                <div class="categorias__items-box categorias__items-box--outros">
-                    <p>Outros</p>
-                </div>
-            </div>
+            <nav>
+                <ul class="categorias__items">
+                    <li>
+                        <a href="#">
+                            <div class="categorias__items-box">
+                                <p>Pizzas</p>
+                                <img src="/img/categorias-pizzas.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="categorias__items-box">
+                                <p>Lanches</p>
+                                <img src="/img/categorias-lanches.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="categorias__items-box">
+                                <p>Sobremesas</p>
+                                <img src="/img/categorias-sobremesas.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="categorias__items-box">
+                                <p>Bebidas</p>
+                                <img src="/img/categorias-bebidas.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="categorias__items-box">
+                                <p>Vegetariana</p>
+                                <img src="/img/categorias-vegetariana.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="categorias__items-box categorias__items-box--outros">
+                        <a href="#">
+                            <div>
+                                <p>Outros</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </section>
         <section class="produtos container" id="produtos">
             <div class="produtos__titulo">
                 <h2>Produtos</h2>
             </div>
-            <div class="produtos__conteudo">
-                <div class="produtos__subtitulo">
-                    <h3>Mais Populares</h3>
-                    <a href="#">Ver Mais</a>
-                </div>
+            <div class="produtos__conteudo produtos__conteudo--margin">
+                <h3>Mais Populares</h3>
+                <a href="#">Ver Mais</a>
                 <div class="produtos__items">
                     <div class="produtos__card">
                         <img src="/img/produtos-pizza.png" alt="pizza">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <span class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,9</span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
+                                    height="20" width="20">4,9</div>
+                            <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
                         </div>
@@ -133,9 +157,9 @@
                         <img src="/img/produtos-hamburguer.png" alt="hambúrguer">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <span class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,9</span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
+                                    height="20" width="20">4,7</div>
+                            <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
                         </div>
@@ -144,9 +168,9 @@
                         <img src="/img/produtos-burritos.png" alt="burritos mexicanos">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <span class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,9</span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
+                                    height="20" width="20">4,8</div>
+                            <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
                         </div>
@@ -163,9 +187,9 @@
                         <img src="/img/produtos-bolo.png" alt="">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <span class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,9</span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
+                                    height="20" width="20">4,6</div>
+                            <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
                         </div>
@@ -174,9 +198,9 @@
                         <img src="/img/produtos-sorvete.png" alt="">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <span class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,9</span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
+                                    height="20" width="20">4,6</div>
+                            <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
                         </div>
@@ -185,11 +209,44 @@
                         <img src="/img/produtos-bolo2.png" alt="">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <span class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,9</span>
+                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
+                                    height="20" width="20">4,9</div>
                             <p>Lorem ipsum dolor sit amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="depoimentos" id="depoimentos">
+            <div class="container">
+                <h2>Depoimentos</h2>
+                <div class="depoimentos-box">
+                    <div class="card">
+                        <img class="card__aspas" src="/img/aspas.svg" alt="">
+                        <img class="card__classificacao" src="/img/estrelas.svg" alt="classificação 5 estrelas">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
+                            placeat excepturi incidunt natus adipisci similique quo dicta.</p>
+                        <div class="card__pessoa">
+                            <span class="circulo">
+                                <img src="/img/pessoa.png" alt="">
+                            </span>
+                            <h4>Maria Eduarda</h4>
+                            <p>São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__aspas" src="/img/aspas.svg" alt="">
+                        <img class="card__classificacao" src="/img/estrelas.svg" alt="classificação 5 estrelas">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
+                            placeat excepturi incidunt natus adipisci similique quo dicta.</p>
+                        <div class="card__pessoa">
+                            <span class="circulo">
+                                <img src="/img/pessoa.png" alt="">
+                            </span>
+                            <h4>Maria Eduarda</h4>
+                            <p>São Paulo - SP</p>
                         </div>
                     </div>
                 </div>

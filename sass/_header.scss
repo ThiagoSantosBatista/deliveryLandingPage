@@ -34,12 +34,14 @@
       cursor: pointer;
       padding: 1.5rem;
       font-size: 1.4rem;
-      letter-spacing: .1rem;
+      letter-spacing: 0.1rem;
       font-weight: bold;
       border: none;
       border-radius: 10rem;
-      color: #fcfcfc;
       background: #ff6700;
+      a {
+        color: #fcfcfc;
+      }
     }
   }
 }
