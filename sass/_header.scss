@@ -2,23 +2,23 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 8rem;
+  height: 7rem;
   width: 100%;
   background: hsl(0, 0%, 99%);
-  box-shadow: 0 0.1rem 1rem rgb(0, 0, 0, 0.15);
+  box-shadow: 0 0.1rem 1rem rgb(0, 0, 0, 0.25);
   z-index: 10;
   &-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 0 5%;
+    padding: 0 11%;
   }
   &__nav-list {
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     letter-spacing: 0.1rem;
     color: black;
   }
@@ -28,13 +28,16 @@
     }
     &--laranja a {
       color: #ff6700;
+      font-weight: bold;
     }
     & button {
       cursor: pointer;
       padding: 1.5rem;
-      font-size: 1.7rem;
+      font-size: 1.4rem;
+      letter-spacing: .1rem;
+      font-weight: bold;
       border: none;
-      border-radius: 2rem;
+      border-radius: 10rem;
       color: #fcfcfc;
       background: #ff6700;
     }

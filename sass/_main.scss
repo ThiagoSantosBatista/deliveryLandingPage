@@ -5,8 +5,8 @@
   max-height: 75rem;
   background: linear-gradient(
       to top,
-      rgba(15, 15, 15, 0.5),
-      rgba(15, 15, 15, 0.5)
+      rgba(15, 15, 15, 0.6),
+      rgba(15, 15, 15, 0.6)
     ),
     url(/img/madie-hamilton-Q9yr-cvJr30-unsplash\ 1.png);
   background-size: cover;
@@ -20,6 +20,7 @@
       font-size: clamp(3rem, 3.7vw, 6rem);
       margin-bottom: 1.8rem;
       line-height: 1.2;
+      text-shadow: 0 0.2rem 0.3rem black;
     }
     p {
       font-size: 2.5rem;
@@ -36,9 +37,9 @@
       left: 50%;
       transform: translateX(-50%);
       gap: 1rem;
-      padding: 1.5rem 2.5rem;
+      padding: 2rem 3rem;
       font-size: 2rem;
-      border-radius: 2rem;
+      border-radius: 10rem;
       color: #fcfcfc;
       background: #ff6700;
       border: 0.2rem solid #fcfcfc;
@@ -49,8 +50,6 @@
 
 .laranja {
   color: #ff6700;
-  text-shadow: -0.05rem 0.05rem 0.1rem white, 0.05rem 0.05rem 0.1rem white,
-    -0.05rem -0.05rem 0.1rem white, 0.05rem 0.05rem 0.1rem white;
 }
 
 .vantagens {
@@ -59,24 +58,24 @@
   justify-content: center;
   gap: 3rem;
   align-items: center;
-  margin-top: 9.6rem;
-  margin-bottom: 9.6rem;
-  padding: 0 5%;
+  padding: 9.6rem 11%;
   &__conteudo-box {
     display: grid;
     grid-template-rows: repeat(3, auto);
     justify-items: center;
-    max-width: 30rem;
+    max-width: 28rem;
     text-align: center;
-    border: 0.2rem solid #334050;
+    border: 0.1rem solid #334050;
     border-radius: 2rem;
-    padding: 2.5rem;
+    padding: 2rem;
     img {
-      margin-bottom: 3.2rem;
+      margin-bottom: 2.5rem;
+      max-height: 5rem;
+      width: auto;
     }
     h3 {
       font-size: 2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     p {
       font-size: 1.6rem;
@@ -89,12 +88,13 @@
   background: #334050;
   &-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 7rem;
-    padding: 8rem 5%;
+    justify-items: center;
+    gap: 4rem;
+    padding: 9.6rem 11%;
     img {
-      max-width: 45rem;
+      width: 45rem;
       height: auto;
       object-fit: cover;
     }
@@ -119,8 +119,7 @@
       }
     }
     p {
-      color: rgb(252, 252, 252, 0.9);
-      font-size: 2rem;
+      font-size: 1.6rem;
       line-height: 1.5;
       margin-bottom: 5rem;
     }
@@ -128,26 +127,27 @@
       background: #ff6700;
       border: 0.2rem solid #fcfcfc;
       color: #fcfcfc;
-      font-size: 2rem;
+      font-size: 1.8rem;
       cursor: pointer;
-      padding: 1rem 3rem;
-      border-radius: 2rem;
+      padding: 1.3rem 3rem;
+      border-radius: 10rem;
       box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.2);
     }
   }
 }
 
 .categorias {
-  display: grid;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  padding: 9.6rem 5%;
+  padding: 9.6rem 11%;
   &__titulo h2 {
     font-family: $font-titulos;
     font-size: 3.5rem;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
     &::after {
       content: "";
       width: 7rem;
@@ -160,38 +160,28 @@
     }
   }
   &__items {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16.2rem, 1fr));
+    grid-template-rows: max-content;
+    gap: 1.5rem;
     &-box {
       position: relative;
       cursor: pointer;
+      height: 16rem;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 2rem;
+        object-fit: cover;
+      }
       p {
         position: absolute;
         bottom: 1.5rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
         left: 50%;
         transform: translateX(-50%);
         color: #fcfcfc;
         z-index: 1;
-      }
-      &--outros {
-        display: grid;
-        place-items: center;
-        width: 37rem;
-        height: 30rem;
-        border-radius: 1rem;
-        button {
-          padding: 2rem 6rem;
-          font-size: 2rem;
-          border-radius: 2rem;
-          cursor: pointer;
-          color: #ff6700;
-          border: 0.2rem solid #ff6700;
-          box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.2);
-          background: #fcfcfc;
-        }
       }
       &::after {
         content: "";
@@ -201,7 +191,125 @@
         position: absolute;
         top: 0;
         left: 0;
+        border-radius: 2rem;
+      }
+      &--outros {
+        background: #334050;
+        border-radius: 2rem;
+        p {
+          left: 50%;
+          bottom: 50%;
+          transform: translate(-50%, 50%);
+        }
+        &::after {
+          content: "";
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.produtos {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 5rem;
+  padding: 9.6rem 11%;
+  &__titulo {
+    grid-column: 1/-1;
+    h2 {
+      font-family: $font-titulos;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 5rem;
+      position: relative;
+      &::after {
+        content: "";
+        width: 7rem;
+        height: 0.2rem;
+        background: black;
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &__conteudo {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3rem;
+    position: relative;
+  }
+  &__subtitulo {
+    h3 {
+      font-size: 2rem;
+    }
+    a {
+      font-size: 1.4rem;
+      color: #ff6700;
+      position: absolute;
+      top: 0.4rem;
+      right: 0;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+    gap: 3rem;
+  }
+  &__card {
+    display: grid;
+    grid-template-rows: auto auto;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, 0.2);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    img {
+      width: 100%;
+      height: 20rem;
+    }
+    &-conteudo {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto 1fr auto;
+      gap: 1rem;
+      height: 15rem;
+      padding: 2rem;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      h4{
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.4rem;
+        grid-column: 1/-1;
+      }
+      .classificacao{
+        display: flex;
+        justify-self: right;
+        align-items: center;
+        color: #EEAD2D;
+        font-size: 1.5rem;
+        font-weight: bold;
+        gap: .5rem;
+        img{
+         height: 1.5rem;
+            width: 1.5rem;
+        }
+      }
+      button{
+        padding: 1rem;
+        background: #ff6700;
+        color: #fcfcfc;
+        cursor: pointer;
         border-radius: 1rem;
+        border: none;
+      }
+      .preco{
+        align-self: end;
+        font-size: 1.7rem;
+        font-weight: bold;
       }
     }
   }
