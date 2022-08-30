@@ -320,9 +320,12 @@
 }
 
 .depoimentos {
-  padding: 9.6rem 11%;
   background: #1a2849;
   color: #fcfcfc;
+  margin-bottom: 9.6rem;
+  .container{
+    padding: 9.6rem 11%;
+  }
   h2 {
     font-size: 3.5rem;
     text-align: center;
@@ -343,7 +346,7 @@
   }
   &-box {
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
   }
 }
 .card {

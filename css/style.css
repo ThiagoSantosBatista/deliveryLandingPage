@@ -400,9 +400,12 @@ a {
 }
 
 .depoimentos {
-  padding: 9.6rem 11%;
   background: #1a2849;
   color: #fcfcfc;
+  margin-bottom: 9.6rem;
+}
+.depoimentos .container {
+  padding: 9.6rem 11%;
 }
 .depoimentos h2 {
   font-size: 3.5rem;
@@ -424,7 +427,7 @@ a {
 }
 .depoimentos-box {
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .card {
@@ -471,6 +474,92 @@ a {
   align-self: start;
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+  background: #0f0f0f;
+  color: #fcfcfc;
+}
+.footer-box {
+  padding: 6.4rem 11%;
+}
+.footer__topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__meio {
+  padding: 5rem 0;
+  position: relative;
+}
+.footer__informacoes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem 1rem;
+}
+.footer__informacoes p {
+  font-size: 1.5rem;
+}
+.footer__informacoes img {
+  justify-self: center;
+  height: 2rem;
+  width: auto;
+}
+.footer__fundo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.footer__fundo p {
+  font-size: 1.3rem;
+}
+.footer__fundo img {
+  height: 3rem;
+  width: auto;
+}
+.footer__laranja {
+  color: #ff6700;
+  font-weight: bold;
+}
+
+.nav-footer__list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-footer__item a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fcfcfc;
+  padding: 1rem;
+}
+.nav-footer__redes-list {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-footer__redes-list img {
+  height: 4.5rem;
+  width: auto;
+}
+
+.linha {
+  width: 100%;
+  height: 0.1rem;
+  background: #fcfcfc;
+  position: absolute;
+}
+.linha__topo {
+  top: 3rem;
+  left: 0;
+}
+.linha__fundo {
+  bottom: 3rem;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

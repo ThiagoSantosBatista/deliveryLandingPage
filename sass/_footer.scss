@@ -1,0 +1,85 @@
+.footer {
+  background: #0f0f0f;
+  color: #fcfcfc;
+  &-box {
+    padding: 6.4rem 11%;
+  }
+  &__topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__meio {
+    padding: 5rem 0;
+    position: relative;
+  }
+  &__informacoes {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem 1rem;
+    p {
+      font-size: 1.5rem;
+    }
+    img {
+      justify-self: center;
+      height: 2rem;
+      width: auto;
+    }
+  }
+  &__fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    p{
+        font-size: 1.3rem;
+    }
+    img{
+        height: 3rem;
+        width: auto;
+    }
+  }
+  &__laranja{
+    color: #ff6700;
+    font-weight: bold;
+  }
+}
+.nav-footer {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__item a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fcfcfc;
+    padding: 1rem;
+  }
+  &__redes-list {
+    display: flex;
+    gap: 1.5rem;
+    img {
+      height: 4.5rem;
+      width: auto;
+    }
+  }
+}
+.linha {
+  width: 100%;
+  height: 0.1rem;
+  background: #fcfcfc;
+  position: absolute;
+  &__topo {
+    top: 3rem;
+    left: 0;
+  }
+  &__fundo {
+    bottom: 3rem;
+    left: 0;
+  }
+}
