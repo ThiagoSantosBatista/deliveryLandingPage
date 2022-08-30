@@ -58,7 +58,7 @@ a {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   color: black;
 }
@@ -67,28 +67,26 @@ a {
 }
 .header__nav-item--laranja a {
   color: #ff6700;
-  font-weight: bold;
 }
 .header__nav-item button {
   cursor: pointer;
-  padding: 1.5rem;
-  font-size: 1.4rem;
+  padding: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 10rem;
-  background: #ff6700;
+  border: 0.2rem solid #ff6700;
+  background: #fcfcfc;
+  border-radius: 0.5rem;
 }
 .header__nav-item button a {
-  color: #fcfcfc;
+  color: #ff6700;
 }
 
 .home {
   display: grid;
   place-items: center;
   height: 100vh;
-  max-height: 75rem;
-  background: linear-gradient(to top, rgba(15, 15, 15, 0.6), rgba(15, 15, 15, 0.6)), url(/img/madie-hamilton-Q9yr-cvJr30-unsplash\ 1.png);
+  max-height: 70rem;
+  background: linear-gradient(rgba(28, 37, 44, 0.9), rgba(28, 37, 44, 0.15)), url(/img/madie-hamilton-Q9yr-cvJr30-unsplash\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -101,31 +99,39 @@ a {
   font-family: "Ubuntu", sans-serif;
   font-size: clamp(3rem, 3.7vw, 6rem);
   margin-bottom: 1.8rem;
+  letter-spacing: -0.2rem;
   line-height: 1.2;
-  text-shadow: 0 0.2rem 0.3rem black;
 }
 .home__conteudo p {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 1.3;
   margin-bottom: 6rem;
-  color: rgba(252, 252, 252, 0.8);
+  color: #ebebeb;
 }
 .home__conteudo button {
-  display: flex;
+  display: inline-block;
   cursor: pointer;
   align-items: center;
   letter-spacing: 0.1rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  gap: 1rem;
-  padding: 2rem 3rem;
+  padding: 1.5rem;
   font-size: 2rem;
-  border-radius: 10rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   color: #fcfcfc;
   background: #ff6700;
-  border: 0.2rem solid #fcfcfc;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.home__input {
+  display: flex;
+  justify-content: center;
+}
+.home__input input {
+  border: none;
+  padding: 1rem 18rem 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .laranja {
@@ -135,18 +141,14 @@ a {
 .vantagens {
   display: flex;
   flex-wrap: wrap;
+  gap: 4.5rem;
   justify-content: center;
-  gap: 3rem;
-  align-items: center;
   padding: 9.6rem 11%;
 }
 .vantagens__conteudo-box {
   display: grid;
   grid-template-rows: repeat(3, auto);
-  justify-items: center;
   max-width: 28rem;
-  text-align: center;
-  border: 0.1rem solid #1a2849;
   border-radius: 2rem;
   padding: 2rem;
 }
@@ -156,29 +158,32 @@ a {
   width: auto;
 }
 .vantagens__conteudo-box h3 {
+  color: #0f0f0f;
   font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 .vantagens__conteudo-box p {
+  color: rgba(28, 37, 44, 0.7);
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 .sobre {
-  background: #1a2849;
+  background: #1c252c;
 }
 .sobre-box {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  gap: 4rem;
-  padding: 9.6rem 11%;
+  gap: 10rem;
+  padding: 6.6rem 11%;
 }
 .sobre-box img {
-  width: 45rem;
-  height: auto;
+  height: 59rem;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 .sobre__conteudo {
   color: #fcfcfc;
@@ -195,15 +200,19 @@ a {
   content: "";
   width: 7rem;
   height: 0.2rem;
-  background: #fcfcfc;
+  background: #ff6700;
   position: absolute;
   bottom: -1rem;
   left: 0;
 }
 .sobre__conteudo p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.5;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+  color: #c0c0c0;
+}
+.sobre__conteudo p:nth-child(2) {
+  margin-bottom: 1rem;
 }
 .sobre__conteudo button {
   background: #ff6700;
@@ -211,91 +220,13 @@ a {
   color: #fcfcfc;
   font-size: 1.8rem;
   cursor: pointer;
-  padding: 1.3rem 3rem;
-  border-radius: 10rem;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.categorias {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 9.6rem 11%;
-}
-.categorias__titulo h2 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  position: relative;
-  margin-bottom: 10rem;
-}
-.categorias__titulo h2::after {
-  content: "";
-  width: 7rem;
-  height: 0.2rem;
-  background: black;
-  position: absolute;
-  bottom: -1rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.categorias__items {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16.2rem, 1fr));
-  gap: 1.5rem;
-}
-.categorias__items-box {
-  position: relative;
-  cursor: pointer;
-  height: 16rem;
-}
-.categorias__items-box img {
-  height: 100%;
-  width: 100%;
-  border-radius: 1rem;
-  object-fit: cover;
-}
-.categorias__items-box p {
-  position: absolute;
-  bottom: 1.5rem;
-  font-size: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fcfcfc;
-  z-index: 1;
-}
-.categorias__items-box::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 1rem;
-}
-.categorias__items-box--outros {
-  background: #1a2849;
-  border-radius: 1rem;
-}
-.categorias__items-box--outros a {
-  width: 100%;
-  height: 100%;
-}
-.categorias__items-box--outros p {
-  left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, 50%);
-}
-.categorias__items-box--outros::after {
-  content: "";
-  display: none;
 }
 
 .produtos {
   padding: 9.6rem 11%;
-  padding-top: 0;
 }
 .produtos__titulo {
   grid-column: 1/-1;
@@ -347,8 +278,8 @@ a {
   display: grid;
   grid-template-rows: auto auto;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 .produtos__card img {
   width: 100%;
@@ -361,8 +292,8 @@ a {
   gap: 1rem;
   height: 15rem;
   padding: 2rem;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 .produtos__card-conteudo h4 {
   font-size: 1.7rem;
@@ -390,7 +321,7 @@ a {
   color: #fcfcfc;
   cursor: pointer;
   letter-spacing: 0.1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: none;
 }
 .produtos__card-conteudo .preco {
@@ -400,7 +331,7 @@ a {
 }
 
 .depoimentos {
-  background: #1a2849;
+  background: #1c252c;
   color: #fcfcfc;
   margin-bottom: 9.6rem;
 }
