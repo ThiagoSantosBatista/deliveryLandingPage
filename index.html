@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <div class="header-box container">
-            <img src="/img/logo.svg" alt="">
+            <a href="#"><img src="/img/logo.svg" alt="logotipo"></a>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#sobre">Sobre</a></li>
@@ -33,38 +33,43 @@
             <div class="home__conteudo">
                 <h1>A entrega de <span class="laranja">comida</span> mais<br> rápida da sua cidade</h1>
                 <p>Lorem ipsum dolor sit amet. Ut quidem voluptas aut natus<br> beatae ab provident modi!</p>
-                <form class="home__input" action="">
-                    <input type="text" placeholder="Insira seu endereço">
+                <form class="home__form">
+                    <div class="home__form__input">
+                        <img src="/img/home-localizacao.svg" alt="">
+                        <input type="text" placeholder="Endereço de entrega">
+                    </div>
                     <button>Buscar</button>
                 </form>
             </div>
         </section>
         <section class="vantagens container">
             <div class="vantagens__conteudo-box">
-                <img src="/img/mobile-screen-solid 1.svg" alt="">
+                <img src="/img/vtg-celular.svg" alt="">
                 <h3>Fácil de Pedir</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro molestias dolore.</p>
             </div>
             <div class="vantagens__conteudo-box">
-                <img src="/img/clock-solid 2.svg" alt="">
+                <img src="/img/vtg-entrega.svg" alt="">
                 <h3>Entrega Rápida</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro molestias dolore.</p>
             </div>
             <div class="vantagens__conteudo-box">
-                <img src="/img/credit-card-solid 2.svg" alt="">
+                <img src="/img/vtg-pagamento.svg" alt="">
                 <h3>Pagamento Seguro</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro molestias dolore.</p>
             </div>
         </section>
         <section class="sobre" id="sobre">
             <div class="sobre-box container">
-                <img src="/img/Delivery address-bro 1.png" alt="">
+                <img src="/img/sobre-img.png" alt="">
                 <div class="sobre__conteudo">
                     <h2>Sobre nós</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus fugit at, labore
-                        aspernatur incidunt voluptatibus repellendus laudantium beatae, aliquam perferendis quasi ipsum veniam eveniet adipisci numquam quaerat, tempora error!</p>
+                        aspernatur incidunt voluptatibus repellendus laudantium beatae, aliquam perferendis quasi ipsum
+                        veniam eveniet adipisci numquam quaerat, tempora error!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus fugit at, labore
-                        aspernatur incidunt voluptatibus repellendus laudantium beatae, aliquam perferendis quasi ipsum veniam eveniet adipisci numquam quaerat, tempora error!</p>
+                        aspernatur incidunt voluptatibus repellendus laudantium beatae, aliquam perferendis quasi ipsum
+                        veniam eveniet adipisci numquam quaerat, tempora error!</p>
                     <button>Leia Mais</button>
                 </div>
             </div>
@@ -78,33 +83,33 @@
                 <a href="#">Ver Mais</a>
                 <div class="produtos__items">
                     <div class="produtos__card">
-                        <img src="/img/produtos-pizza.png" alt="pizza">
+                        <img src="/img/produtos-hamburguer.png" alt="pizza">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,9</div>
+                            <div class="classificacao"><img src="/img/produtos-estrela.svg"
+                                    alt="estrela de classificação" height="20" width="20">4,6</div>
                             <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
                         </div>
                     </div>
                     <div class="produtos__card">
-                        <img src="/img/produtos-hamburguer.png" alt="hambúrguer">
+                        <img src="/img/produtos-burritos.png" alt="hambúrguer">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,7</div>
+                            <div class="classificacao"><img src="/img/produtos-estrela.svg"
+                                    alt="estrela de classificação" height="20" width="20">4,7</div>
                             <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
                         </div>
                     </div>
                     <div class="produtos__card">
-                        <img src="/img/produtos-burritos.png" alt="burritos mexicanos">
+                        <img src="/img/produtos-bolo2.png" alt="burritos mexicanos">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,8</div>
+                            <div class="classificacao"><img src="/img/produtos-estrela.svg"
+                                    alt="estrela de classificação" height="20" width="20">4,6</div>
                             <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
@@ -114,7 +119,7 @@
             </div>
             <div class="produtos__conteudo">
                 <div class="produtos__subtitulo">
-                    <h3>Sobremesas</h3>
+                    <h3>Melhores Avaliações</h3>
                     <a href="#">Ver Mais</a>
                 </div>
                 <div class="produtos__items">
@@ -122,8 +127,19 @@
                         <img src="/img/produtos-bolo.png" alt="">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,6</div>
+                            <div class="classificacao"><img src="/img/produtos-estrela.svg"
+                                    alt="estrela de classificação" height="20" width="20">4,9</div>
+                            <p>Lorem ipsum dolor sit<br> amet</p>
+                            <span class="preco">R$ 10,00</span>
+                            <button>Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="produtos__card">
+                        <img src="/img/produtos-pizza.png" alt="">
+                        <div class="produtos__card-conteudo">
+                            <h4>Lorem Ipsum</h4>
+                            <div class="classificacao"><img src="/img/produtos-estrela.svg"
+                                    alt="estrela de classificação" height="20" width="20">4,8</div>
                             <p>Lorem ipsum dolor sit<br> amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
@@ -133,19 +149,8 @@
                         <img src="/img/produtos-sorvete.png" alt="">
                         <div class="produtos__card-conteudo">
                             <h4>Lorem Ipsum</h4>
-                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,6</div>
-                            <p>Lorem ipsum dolor sit<br> amet</p>
-                            <span class="preco">R$ 10,00</span>
-                            <button>Adicionar</button>
-                        </div>
-                    </div>
-                    <div class="produtos__card">
-                        <img src="/img/produtos-bolo2.png" alt="">
-                        <div class="produtos__card-conteudo">
-                            <h4>Lorem Ipsum</h4>
-                            <div class="classificacao"><img src="/img/estrela.svg" alt="estrela de classificação"
-                                    height="20" width="20">4,9</div>
+                            <div class="classificacao"><img src="/img/produtos-estrela.svg"
+                                    alt="estrela de classificação" height="20" width="20">4,9</div>
                             <p>Lorem ipsum dolor sit amet</p>
                             <span class="preco">R$ 10,00</span>
                             <button>Adicionar</button>
@@ -159,30 +164,26 @@
                 <h2>Depoimentos</h2>
                 <div class="depoimentos-box">
                     <div class="card">
-                        <img class="card__aspas" src="/img/aspas.svg" alt="">
-                        <img class="card__classificacao" src="/img/estrelas.svg" alt="classificação 5 estrelas">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
-                            placeat excepturi incidunt natus adipisci similique quo dicta.</p>
-                        <div class="card__pessoa">
-                            <span class="circulo">
-                                <img src="/img/pessoa.png" alt="">
-                            </span>
-                            <h4>Maria Eduarda</h4>
-                            <p>São Paulo - SP</p>
-                        </div>
+                        <span class="circulo">
+                            <img src="/img/depoimentos-pessoa.png" alt="">
+                        </span>
+                        <img class="card__classificacao" src="/img/depoimentos-estrelas.svg"
+                            alt="classificação 5 estrelas">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
+                            placeat excepturi incidunt natus adipisci similique quo dicta."</p>
+                        <h4>Maria Eduarda</h4>
+                        <p>São Paulo - SP</p>
                     </div>
                     <div class="card">
-                        <img class="card__aspas" src="/img/aspas.svg" alt="">
-                        <img class="card__classificacao" src="/img/estrelas.svg" alt="classificação 5 estrelas">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
-                            placeat excepturi incidunt natus adipisci similique quo dicta.</p>
-                        <div class="card__pessoa">
-                            <span class="circulo">
-                                <img src="/img/pessoa.png" alt="">
-                            </span>
-                            <h4>Maria Eduarda</h4>
-                            <p>São Paulo - SP</p>
-                        </div>
+                        <span class="circulo">
+                            <img src="/img/depoimentos-pessoa.png" alt="">
+                        </span>
+                        <img class="card__classificacao" src="/img/depoimentos-estrelas.svg"
+                            alt="classificação 5 estrelas">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
+                            placeat excepturi incidunt natus adipisci similique quo dicta."</p>
+                        <h4>Maria Eduarda</h4>
+                        <p>São Paulo - SP</p>
                     </div>
                 </div>
             </div>
@@ -191,7 +192,7 @@
     <footer class="footer">
         <div class="footer-box container">
             <div class="footer__topo">
-                <img src="/img/logo-footer.svg" alt="">
+                <a href="#"><img src="/img/footer-logo.svg" alt="logotipo"></a>
                 <nav>
                     <ul class="nav-footer__list">
                         <li class="nav-footer__item"><a href="#">Ajuda</a></li>
@@ -204,29 +205,29 @@
                 <span class="linha linha__topo">&nbsp</span>
                 <span class="linha linha__fundo">&nbsp</span>
                 <div class="footer__informacoes">
-                    <img src="/img/telefone.svg" alt="">
+                    <img src="/img/footer-telefone.svg" alt="">
                     <p>(11) 9999-9999</p>
-                    <img src="/img/localizacao.svg" alt="">
+                    <img src="/img/footer-localizacao.svg" alt="">
                     <p>São Paulo - SP, 1500</p>
-                    <img src="/img/email.svg" alt="">
+                    <img src="/img/footer-email.svg" alt="">
                     <p>suporte@loremipsum.com</p>
                 </div>
                 <div class="footer__redes">
                     <nav>
                         <ul class="nav-footer__redes-list">
-                            <li><a href=""><img src="/img/facebook.svg" alt="ícone do facebook"></a></li>
-                            <li><a href=""><img src="/img/instagram.svg" alt="ícone do instagram"></a></li>
-                            <li><a href=""><img src="/img/twitter.svg" alt="ícone do twitter"></a></li>
+                            <li><a href="#"><img src="/img/redes-facebook.svg" alt="ícone do facebook"></a></li>
+                            <li><a href="#"><img src="/img/redes-instagram.svg" alt="ícone do instagram"></a></li>
+                            <li><a href="#"><img src="/img/redes-twitter.svg" alt="ícone do twitter"></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="footer__fundo">
                 <p>Desenvolvido por <span class="footer__laranja">Thiago Batista</span>.</p>
-                <a href="https://github.com/ThiagoSantosBatista" target="_blank"><img src="/img/github.svg"
+                <a href="https://github.com/ThiagoSantosBatista" target="_blank"><img src="/img/contato-github.svg"
                         alt="ícone do GitHub"></a>
                 <a href="https://www.linkedin.com/in/thiago-santos-batista/" target="_blank"><img
-                        src="/img/linkedin.svg" alt="ícone do linkedIn"></a>
+                        src="/img/contato-linkedin.svg" alt="ícone do linkedIn"></a>
             </div>
         </div>
     </footer>

@@ -4,7 +4,7 @@
   height: 100vh;
   max-height: 70rem;
   background: linear-gradient(rgb(28, 37, 44, 0.9), rgba(28, 37, 44, 0.15)),
-    url(/img/madie-hamilton-Q9yr-cvJr30-unsplash\ 1.png);
+    url(/img/home-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,7 +30,7 @@
       align-items: center;
       letter-spacing: 0.1rem;
       padding: 1.5rem;
-      font-size: 2rem;
+      font-size: 1.8rem;
       border-radius: 0.5rem;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
@@ -39,16 +39,39 @@
       border: none;
     }
   }
-  &__input {
+  &__form {
     display: flex;
     justify-content: center;
-
-    input {
-      border: none;
-      padding: 1rem 18rem 1rem 1.5rem;
+    width: 100%;
+    &__input {
+      width: 80%;
+      height: 5.273rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 0 1.5rem;
       border-radius: 0.5rem;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      background: #fcfcfc;
+      img {
+        height: 2rem;
+        width: auto;
+      }
+      input {
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem 0;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.4rem;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
 }
@@ -62,7 +85,7 @@
   flex-wrap: wrap;
   gap: 4.5rem;
   justify-content: center;
-  padding: 9.6rem 11%;
+  padding: 8rem 11%;
   &__conteudo-box {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -145,7 +168,7 @@
 }
 
 .produtos {
-  padding: 9.6rem 11%;
+  padding: 12.8rem 11%;
   &__titulo {
     grid-column: 1/-1;
     h2 {
@@ -159,7 +182,7 @@
         content: "";
         width: 7rem;
         height: 0.2rem;
-        background: black;
+        background: #ff6700;
         position: absolute;
         bottom: -1rem;
         left: 50%;
@@ -251,7 +274,6 @@
 
 .depoimentos {
   background: #1c252c;
-  color: #fcfcfc;
   margin-bottom: 9.6rem;
   .container {
     padding: 9.6rem 11%;
@@ -259,15 +281,16 @@
   h2 {
     font-size: 3.5rem;
     text-align: center;
+    color: #fcfcfc;
     font-family: $font-titulos;
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
     text-transform: uppercase;
     position: relative;
     &::after {
       content: "";
       width: 7rem;
       height: 0.2rem;
-      background: #fcfcfc;
+      background: #ff6700;
       position: absolute;
       bottom: -1rem;
       left: 50%;
@@ -276,51 +299,47 @@
   }
   &-box {
     display: flex;
+    justify-content: center;
     gap: 4rem;
   }
 }
 .card {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background: #fcfcfc;
-  padding: 3rem;
-  padding-top: 5rem;
-  color: black;
-  border-radius: 1rem;
+  padding: 8rem 4rem 2rem 4rem;
+  max-width: 47rem;
+  border-radius: 0.5rem;
   position: relative;
   p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
   }
-  &__aspas {
+  .circulo {
     position: absolute;
-    top: 0;
-    left: 4rem;
-    transform: translateY(-50%);
+    inset: 0 0 0 50%;
+    transform: translate(-50%, -50%);
+    background: #ebebeb;
+    border: 0.1rem solid #0f0f0f;
+    border-radius: 50%;
+    height: 11rem;
+    width: 11rem;
+    img {
+      height: 10.8rem;
+    }
   }
-  &__pessoa {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 0.3rem;
-    .circulo {
-      background: gray;
-      border-radius: 50%;
-      grid-row: 1/-1;
-      img {
-        height: 7rem;
-      }
-    }
-    h4 {
-      align-self: end;
-      font-size: 1.7rem;
-      grid-column: 2;
-    }
-    p {
-      align-self: start;
-      font-size: 1.3rem;
-      color: rgb(0, 0, 0, 0.7);
-    }
+  &__classificacao {
+    height: 2rem;
+    width: auto;
+    margin-bottom: 1.5rem;
+  }
+  h4 {
+    font-size: 1.7rem;
+  }
+  p:last-child {
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0, 0.7);
   }
 }

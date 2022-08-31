@@ -31,18 +31,19 @@
   }
   &__fundo {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    p{
-        font-size: 1.3rem;
+    p {
+      font-size: 1.3rem;
     }
-    img{
-        height: 3rem;
-        width: auto;
+    img {
+      height: 3.5rem;
+      width: auto;
     }
   }
-  &__laranja{
+  &__laranja {
     color: #ff6700;
     font-weight: bold;
   }
