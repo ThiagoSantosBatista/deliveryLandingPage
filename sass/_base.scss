@@ -1,5 +1,31 @@
 $font: "Sora", sans-serif;
 $font-titulos: "Ubuntu", sans-serif;
+$laranja: #ff6700;
+$preto: #0b0b0b;
+$cinza1: #c0c0c0;
+$cinza2: #636262;
+$cinza3: #1c252c;
+$branco: #fcfcfc;
+$dourado: #eead2d;
+:root {
+  --mg-lados: 11%;
+  --h2: 3.5rem;
+}
+
+@mixin absoluteTop($valor1, $valor2) {
+  position: absolute;
+  top: $valor1;
+  left: $valor2;
+}
+@mixin absoluteBottom($valor1, $valor2) {
+  position: absolute;
+  bottom: $valor1;
+  left: $valor2;
+}
+@mixin btnLaranja {
+  color: $branco;
+  background: $laranja;
+}
 
 *,
 *::before,
@@ -17,8 +43,8 @@ html {
 }
 body {
   min-height: 100vh;
-  background: #fcfcfc;
-  color: #0f0f0f;
+  background: $branco;
+  color: $preto;
 }
 img {
   max-width: 100%;

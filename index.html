@@ -5,27 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TSBFoods. A entrega de comida mais rápida da sua cidade, faça já o seu pedido!">
     <title>TSBFoods</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="header-box">
-                <a href="#"><img src="/img/logo.svg" alt="logotipo"></a>
+                <a href="#"><img src="/img/logo.svg" alt="logotipo" height="31" width="165"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item"><a href="#sobre">Sobre</a></li>
                         <li class="header__nav-item"><a href="#produtos">Produtos</a></li>
                         <li class="header__nav-item"><a href="#depoimentos">Depoimentos</a></li>
-                        <li class="header__nav-item--laranja "><a href="#">Entrar</a></li>
-                        <li class="header__nav-item"><button><a href="#">Criar Conta</a></button></li>
+                        <li class="header__nav-item"><a class="laranja" href="#">Entrar</a></li>
+                        <li class="header__nav-item"><button>Criar Conta</button></li>
                     </ul>
+                    <button class="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
+                        <span class="mobile-menu__linha-1"></span>
+                        <span class="mobile-menu__linha-2"></span>
+                        <span class="mobile-menu__linha-3"></span>
+                    </button>
                 </nav>
             </div>
         </div>
@@ -34,8 +42,8 @@
         <section class="home">
             <div class="home__conteudo">
                 <h1>A entrega de <span class="laranja">comida</span> mais<br> rápida da sua cidade</h1>
-                <p>Lorem ipsum dolor sit amet. Ut quidem voluptas aut natus<br> beatae ab provident modi!</p>
-                <form class="home__form" action="">
+                <h2>Lorem ipsum dolor sit amet. Ut quidem voluptas aut natus<br> beatae ab provident modi!</h2>
+                <form class="home__form">
                     <div class="home__form__input">
                         <img src="/img/home-localizacao.svg" alt="">
                         <input type="text" placeholder="Endereço de entrega">
@@ -46,18 +54,18 @@
         </section>
         <section class="vantagens container">
             <div class="vantagens-box">
-                <div class="vantagens__conteudo-box">
-                    <img src="/img/vtg-celular.svg" alt="">
+                <div class="vantagens__conteudo" data-aos="fade-up">
+                    <img src="/img/vtg-celular.svg" alt="" height="50" width="30">
                     <h3>Fácil de Pedir</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro molestias dolore.</p>
                 </div>
-                <div class="vantagens__conteudo-box">
-                    <img src="/img/vtg-entrega.svg" alt="">
+                <div class="vantagens__conteudo" data-aos="fade-up">
+                    <img src="/img/vtg-entrega.svg" alt="" height="50" width="50">
                     <h3>Entrega Rápida</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro molestias dolore.</p>
                 </div>
-                <div class="vantagens__conteudo-box">
-                    <img src="/img/vtg-pagamento.svg" alt="">
+                <div class="vantagens__conteudo" data-aos="fade-up">
+                    <img src="/img/vtg-pagamento.svg" alt="" height="50" width="50">
                     <h3>Pagamento Seguro</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro molestias dolore.</p>
                 </div>
@@ -66,9 +74,14 @@
         <section class="sobre" id="sobre">
             <div class="container">
                 <div class="sobre-box">
-                    <img src="/img/sobre-img.jpg" alt="">
-                    <div class="sobre__conteudo">
-                        <h2>Sobre nós</h2>
+                    <picture>
+                        <source media="(max-width: 430px)" srcset="/img/sobre-img--mobile.jpg">
+                        <img src="/img/sobre-img.jpg" alt="" height="590" width="512" data-aos="fade-up-right">
+                    </picture>
+                    <div class="sobre__conteudo" data-aos="fade-up">
+                        <header>
+                            <h2>Sobre nós</h2>
+                        </header>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus fugit at,
                             labore
                             aspernatur incidunt voluptatibus repellendus laudantium beatae, aliquam perferendis quasi
@@ -86,128 +99,132 @@
         </section>
         <section class="produtos container" id="produtos">
             <div class="produtos-box">
-                <div class="produtos__titulo">
+                <header class="produtos__titulo" data-aos="fade-right">
                     <h2>Produtos</h2>
-                </div>
-                <div class="produtos__conteudo">
-                    <h3>Mais Populares</h3>
+                </header>
+                <article class="produtos__conteudo produtos__conteudo-margin">
                     <a class="produtos__conteudo__ver-mais" href="#">Ver Mais</a>
+                    <header>
+                        <h3>Mais Pedidos</h3>
+                    </header>
                     <div class="produtos__items">
-                        <div class="produtos__card">
-                            <img src="/img/produtos-hamburguer.jpg" alt="Hambúrguer">
+                        <article class="produtos__card" data-aos="fade-up">
+                            <img src="/img/produtos-hamburguer.jpg" alt="Hambúrguer" height="200" width="355">
                             <div class="produtos__card-conteudo">
                                 <h4>Lorem Ipsum</h4>
-                                <div class="classificacao"><img src="/img/produtos-estrela.svg"
-                                        alt="estrela de classificação" height="20" width="20">4,6</div>
+                                <div class="classificacao"><img src="/img/produtos-estrela.svg" alt="Estrela"
+                                        height="15" width="15">4,6</div>
                                 <p>Lorem ipsum dolor sit<br> amet</p>
                                 <span class="preco">R$ 10,00</span>
                                 <button>Adicionar</button>
                             </div>
-                        </div>
-                        <div class="produtos__card">
-                            <img src="/img/produtos-burritos.jpg" alt="burritos mexicanos">
+                        </article>
+                        <article class="produtos__card" data-aos="fade-up">
+                            <img src="/img/produtos-burritos.jpg" alt="burritos mexicanos" height="200" width="355">
                             <div class="produtos__card-conteudo">
                                 <h4>Lorem Ipsum</h4>
-                                <div class="classificacao"><img src="/img/produtos-estrela.svg"
-                                        alt="estrela de classificação" height="20" width="20">4,7</div>
+                                <div class="classificacao"><img src="/img/produtos-estrela.svg" alt="Estrela"
+                                        height="15" width="15">4,7</div>
                                 <p>Lorem ipsum dolor sit<br> amet</p>
                                 <span class="preco">R$ 10,00</span>
                                 <button>Adicionar</button>
                             </div>
-                        </div>
-                        <div class="produtos__card">
-                            <img src="/img/produtos-bolo2.jpg" alt="Bolo">
+                        </article>
+                        <article class="produtos__card" data-aos="fade-up">
+                            <img src="/img/produtos-bolo2.jpg" alt="Bolo" height="200" width="355">
                             <div class="produtos__card-conteudo">
                                 <h4>Lorem Ipsum</h4>
-                                <div class="classificacao"><img src="/img/produtos-estrela.svg"
-                                        alt="estrela de classificação" height="20" width="20">4,6</div>
+                                <div class="classificacao"><img src="/img/produtos-estrela.svg" alt="Estrela"
+                                        height="15" width="15">4,6</div>
                                 <p>Lorem ipsum dolor sit<br> amet</p>
                                 <span class="preco">R$ 10,00</span>
                                 <button>Adicionar</button>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                </div>
-                <div class="produtos__conteudo">
-                    <div class="produtos__subtitulo">
-                        <h3>Melhores Avaliações</h3>
-                        <a class="produtos__conteudo__ver-mais" href="#">Ver Mais</a>
-                    </div>
+                </article>
+                <article class="produtos__conteudo">
+                    <a class="produtos__conteudo__ver-mais" href="#">Ver Mais</a>
+                    <header class="produtos__subtitulo">
+                        <h3>Melhores Notas</h3>
+                    </header>
                     <div class="produtos__items">
-                        <div class="produtos__card">
-                            <img src="/img/produtos-bolo.jpg" alt="Bolo">
+                        <article class="produtos__card" data-aos="fade-up">
+                            <img src="/img/produtos-bolo.jpg" alt="Bolo" height="200" width="355">
                             <div class="produtos__card-conteudo">
                                 <h4>Lorem Ipsum</h4>
-                                <div class="classificacao"><img src="/img/produtos-estrela.svg"
-                                        alt="estrela de classificação" height="20" width="20">4,9</div>
+                                <div class="classificacao"><img src="/img/produtos-estrela.svg" alt="Estrela"
+                                        height="15" width="15">4,9</div>
                                 <p>Lorem ipsum dolor sit<br> amet</p>
                                 <span class="preco">R$ 10,00</span>
                                 <button>Adicionar</button>
                             </div>
-                        </div>
-                        <div class="produtos__card">
-                            <img src="/img/produtos-pizza.jpg" alt="Pizza">
+                        </article>
+                        <article class="produtos__card" data-aos="fade-up">
+                            <img src="/img/produtos-pizza.jpg" alt="Pizza" height="200" width="355">
                             <div class="produtos__card-conteudo">
                                 <h4>Lorem Ipsum</h4>
-                                <div class="classificacao"><img src="/img/produtos-estrela.svg"
-                                        alt="estrela de classificação" height="20" width="20">4,8</div>
+                                <div class="classificacao"><img src="/img/produtos-estrela.svg" alt="Estrela"
+                                        height="15" width="15">4,8</div>
                                 <p>Lorem ipsum dolor sit<br> amet</p>
                                 <span class="preco">R$ 10,00</span>
                                 <button>Adicionar</button>
                             </div>
-                        </div>
-                        <div class="produtos__card">
-                            <img src="/img/produtos-sorvete.jpg" alt="Sorvete">
+                        </article>
+                        <article class="produtos__card" data-aos="fade-up">
+                            <img src="/img/produtos-sorvete.jpg" alt="Sorvete" height="200" width="355">
                             <div class="produtos__card-conteudo">
                                 <h4>Lorem Ipsum</h4>
-                                <div class="classificacao"><img src="/img/produtos-estrela.svg"
-                                        alt="estrela de classificação" height="20" width="20">4,9</div>
+                                <div class="classificacao"><img src="/img/produtos-estrela.svg" alt="Estrela"
+                                        height="15" width="15">4,9</div>
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <span class="preco">R$ 10,00</span>
                                 <button>Adicionar</button>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
-        <section class="depoimentos" id="depoimentos">
+        <article class="depoimentos" id="depoimentos">
             <div class="container">
                 <div class="depoimentos-box">
-                    <h2>Depoimentos</h2>
-                    <div class="card-box">
-                        <div class="card">
+                    <header data-aos="fade-right">
+                        <h2>Depoimentos</h2>
+                    </header>
+                    <article class="card-box">
+                        <article class="card" data-aos="fade-up-right">
                             <span class="circulo">
-                                <img src="/img/depoimentos-pessoa.png" alt="">
+                                <img src="/img/depoimentos-pessoa.png" alt="" height="108" width="107">
                             </span>
                             <img class="card__classificacao" src="/img/depoimentos-estrelas.svg"
-                                alt="classificação 5 estrelas">
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
-                                placeat excepturi incidunt natus adipisci similique quo dicta."</p>
-                            <h4>Maria Eduarda</h4>
+                                alt="classificação 5 estrelas" height="20" width="123">
+                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
+                                placeat excepturi incidunt natus adipisci similique quo dicta.</q>
+                            <p class="card__nome-autor">Maria Eduarda</p>
                             <p>São Paulo - SP</p>
-                        </div>
-                        <div class="card">
+                        </article>
+                        <article class="card" data-aos="fade-up-right">
                             <span class="circulo">
-                                <img src="/img/depoimentos-pessoa.png" alt="">
+                                <img src="/img/depoimentos-pessoa.png" alt="" height="108" width="107">
                             </span>
                             <img class="card__classificacao" src="/img/depoimentos-estrelas.svg"
-                                alt="classificação 5 estrelas">
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
-                                placeat excepturi incidunt natus adipisci similique quo dicta."</p>
-                            <h4>Maria Eduarda</h4>
+                                alt="classificação 5 estrelas" height="20" width="123">
+                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas delectus repudiandae
+                                placeat excepturi incidunt natus adipisci similique quo dicta.</q>
+                            <p class="card__nome-autor">Maria Eduarda</p>
                             <p>São Paulo - SP</p>
-                        </div>
-                    </div>
+                        </article>
+                    </article>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer-box">
                 <div class="footer__topo">
-                    <a href="#"><img src="/img/footer-logo.svg" alt="logotipo"></a>
+                    <a href="#"><img src="/img/footer-logo.svg" alt="logotipo" height="31" width="165"></a>
                     <nav>
                         <ul class="nav-footer__list">
                             <li class="nav-footer__item"><a href="#">Ajuda</a></li>
@@ -217,36 +234,100 @@
                     </nav>
                 </div>
                 <div class="footer__meio">
-                    <span class="linha linha__topo">&nbsp</span>
-                    <span class="linha linha__fundo">&nbsp</span>
+                    <span class="linha linha__topo">&nbsp;</span>
+                    <span class="linha linha__fundo">&nbsp;</span>
                     <div class="footer__informacoes">
-                        <img src="/img/footer-telefone.svg" alt="">
+                        <img src="/img/footer-telefone.svg" alt="telefone" height="20" width="20">
                         <p>(11) 9999-9999</p>
-                        <img src="/img/footer-localizacao.svg" alt="">
+                        <img src="/img/footer-localizacao.svg" alt="localização" height="20" width="16">
                         <p>São Paulo - SP, 1500</p>
-                        <img src="/img/footer-email.svg" alt="">
+                        <img src="/img/footer-email.svg" alt="email" height="20" width="20">
                         <p>suporte@loremipsum.com</p>
                     </div>
                     <div class="footer__redes">
                         <nav>
                             <ul class="nav-footer__redes-list">
-                                <li><a href="#"><img src="/img/redes-facebook.svg" alt="ícone do facebook"></a></li>
-                                <li><a href="#"><img src="/img/redes-instagram.svg" alt="ícone do instagram"></a></li>
-                                <li><a href="#"><img src="/img/redes-twitter.svg" alt="ícone do twitter"></a></li>
+                                <li><a href="#"><svg width="55" height="55" viewBox="0 0 55 55" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#FCFCFC" />
+                                            <g clip-path="url(#clip0_23_638)">
+                                                <path
+                                                    d="M34.3559 29.375L35.1891 23.9457H29.9795V20.4225C29.9795 18.9371 30.7072 17.4893 33.0404 17.4893H35.4088V12.8668C35.4088 12.8668 33.2596 12.5 31.2047 12.5C26.9145 12.5 24.1102 15.1004 24.1102 19.8078V23.9457H19.3412V29.375H24.1102V42.5H29.9795V29.375H34.3559Z"
+                                                    fill="#FF6700" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_23_638">
+                                                    <rect width="18.75" height="30" fill="white"
+                                                        transform="translate(18 12.5)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></a></li>
+                                <li><a href="#"><svg width="55" height="55" viewBox="0 0 55 55" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#FCFCFC" />
+                                            <g clip-path="url(#clip0_23_646)">
+                                                <path
+                                                    d="M27.1309 20.7617C23.4043 20.7617 20.3984 23.7676 20.3984 27.4941C20.3984 31.2207 23.4043 34.2266 27.1309 34.2266C30.8574 34.2266 33.8633 31.2207 33.8633 27.4941C33.8633 23.7676 30.8574 20.7617 27.1309 20.7617ZM27.1309 31.8711C24.7227 31.8711 22.7539 29.9082 22.7539 27.4941C22.7539 25.0801 24.7168 23.1172 27.1309 23.1172C29.5449 23.1172 31.5078 25.0801 31.5078 27.4941C31.5078 29.9082 29.5391 31.8711 27.1309 31.8711ZM35.709 20.4863C35.709 21.3594 35.0059 22.0566 34.1387 22.0566C33.2656 22.0566 32.5684 21.3535 32.5684 20.4863C32.5684 19.6191 33.2715 18.916 34.1387 18.916C35.0059 18.916 35.709 19.6191 35.709 20.4863ZM40.168 22.0801C40.0684 19.9766 39.5879 18.1133 38.0469 16.5781C36.5117 15.043 34.6484 14.5625 32.5449 14.457C30.377 14.334 23.8789 14.334 21.7109 14.457C19.6133 14.5566 17.75 15.0371 16.209 16.5723C14.668 18.1074 14.1934 19.9707 14.0879 22.0742C13.9648 24.2422 13.9648 30.7402 14.0879 32.9082C14.1875 35.0117 14.668 36.875 16.209 38.4102C17.75 39.9453 19.6074 40.4258 21.7109 40.5312C23.8789 40.6543 30.377 40.6543 32.5449 40.5312C34.6484 40.4316 36.5117 39.9512 38.0469 38.4102C39.582 36.875 40.0625 35.0117 40.168 32.9082C40.291 30.7402 40.291 24.248 40.168 22.0801ZM37.3672 35.2344C36.9102 36.3828 36.0254 37.2676 34.8711 37.7305C33.1426 38.416 29.041 38.2578 27.1309 38.2578C25.2207 38.2578 21.1133 38.4102 19.3906 37.7305C18.2422 37.2734 17.3574 36.3887 16.8945 35.2344C16.209 33.5059 16.3672 29.4043 16.3672 27.4941C16.3672 25.584 16.2148 21.4766 16.8945 19.7539C17.3516 18.6055 18.2363 17.7207 19.3906 17.2578C21.1191 16.5723 25.2207 16.7305 27.1309 16.7305C29.041 16.7305 33.1484 16.5781 34.8711 17.2578C36.0195 17.7148 36.9043 18.5996 37.3672 19.7539C38.0527 21.4824 37.8945 25.584 37.8945 27.4941C37.8945 29.4043 38.0527 33.5117 37.3672 35.2344Z"
+                                                    fill="#FF6700" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_23_646">
+                                                    <rect width="26.25" height="30" fill="white"
+                                                        transform="translate(14 12.5)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#"><svg width="55" height="55" viewBox="0 0 55 55" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#FCFCFC" />
+                                            <g clip-path="url(#clip0_23_648)">
+                                                <path
+                                                    d="M39.4162 21.3897C39.4353 21.6562 39.4353 21.9227 39.4353 22.1892C39.4353 30.3173 33.2487 39.6828 21.9416 39.6828C18.4581 39.6828 15.2221 38.6739 12.5 36.9227C12.9949 36.9798 13.4708 36.9988 13.9848 36.9988C16.8591 36.9988 19.5051 36.028 21.618 34.372C18.915 34.3148 16.6497 32.5445 15.8693 30.108C16.25 30.165 16.6307 30.2031 17.0305 30.2031C17.5825 30.2031 18.1346 30.127 18.6485 29.9938C15.8312 29.4227 13.7182 26.9481 13.7182 23.9595V23.8834C14.5367 24.3402 15.4886 24.6258 16.4974 24.6638C14.8413 23.5597 13.7563 21.6752 13.7563 19.5432C13.7563 18.4011 14.0608 17.3542 14.5938 16.4404C17.6205 20.1714 22.17 22.6079 27.2715 22.8745C27.1763 22.4176 27.1192 21.9418 27.1192 21.4659C27.1192 18.0775 29.8603 15.3174 33.2677 15.3174C35.038 15.3174 36.6369 16.0598 37.7601 17.259C39.1496 16.9925 40.4821 16.4785 41.6623 15.7742C41.2054 17.2019 40.2346 18.4012 38.9593 19.1625C40.1966 19.0294 41.3959 18.6866 42.4999 18.2108C41.6625 19.429 40.6154 20.514 39.4162 21.3897Z"
+                                                    fill="#FF6700" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_23_648">
+                                                    <rect width="30" height="30" fill="white"
+                                                        transform="translate(12.5 12.5)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="footer__fundo">
-                    <p>Desenvolvido por <span class="footer__laranja">Thiago Batista</span>.</p>
-                    <a href="https://github.com/ThiagoSantosBatista" target="_blank"><img src="/img/contato-github.svg"
-                            alt="ícone do GitHub"></a>
-                    <a href="https://www.linkedin.com/in/thiago-santos-batista/" target="_blank"><img
-                            src="/img/contato-linkedin.svg" alt="ícone do linkedIn"></a>
+                    <p>Desenvolvido por <span class="laranja">Thiago Batista</span>.</p>
+                    <div class="contatos">
+                        <a href="https://github.com/ThiagoSantosBatista" target="_blank"><svg width="35" height="40"
+                                viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.25 2.5H3.75C1.67969 2.5 0 4.17969 0 6.25V33.75C0 35.8203 1.67969 37.5 3.75 37.5H31.25C33.3203 37.5 35 35.8203 35 33.75V6.25C35 4.17969 33.3203 2.5 31.25 2.5ZM21.6641 32.4766C21.0078 32.5938 20.7656 32.1875 20.7656 31.8516C20.7656 31.4297 20.7812 29.2734 20.7812 27.5312C20.7812 26.3125 20.375 25.5391 19.8984 25.1328C22.7891 24.8125 25.8359 24.4141 25.8359 19.4219C25.8359 18 25.3281 17.2891 24.5 16.375C24.6328 16.0391 25.0781 14.6562 24.3672 12.8594C23.2812 12.5234 20.7969 14.2578 20.7969 14.2578C19.7656 13.9688 18.6484 13.8203 17.5469 13.8203C16.4453 13.8203 15.3281 13.9688 14.2969 14.2578C14.2969 14.2578 11.8125 12.5234 10.7266 12.8594C10.0156 14.6484 10.4531 16.0312 10.5938 16.375C9.76562 17.2891 9.375 18 9.375 19.4219C9.375 24.3906 12.2891 24.8125 15.1797 25.1328C14.8047 25.4688 14.4688 26.0469 14.3516 26.875C13.6094 27.2109 11.7109 27.7891 10.5781 25.7891C9.86719 24.5547 8.58594 24.4531 8.58594 24.4531C7.32031 24.4375 8.5 25.25 8.5 25.25C9.34375 25.6406 9.9375 27.1406 9.9375 27.1406C10.6953 29.4609 14.3203 28.6797 14.3203 28.6797C14.3203 29.7656 14.3359 31.5313 14.3359 31.8516C14.3359 32.1875 14.1016 32.5938 13.4375 32.4766C8.28125 30.75 4.67188 25.8438 4.67188 20.1094C4.67188 12.9375 10.1562 7.49219 17.3281 7.49219C24.5 7.49219 30.3125 12.9375 30.3125 20.1094C30.3203 25.8438 26.8203 30.7578 21.6641 32.4766ZM14 27.7031C13.8516 27.7344 13.7109 27.6719 13.6953 27.5703C13.6797 27.4531 13.7812 27.3516 13.9297 27.3203C14.0781 27.3047 14.2188 27.3672 14.2344 27.4688C14.2578 27.5703 14.1562 27.6719 14 27.7031ZM13.2578 27.6328C13.2578 27.7344 13.1406 27.8203 12.9844 27.8203C12.8125 27.8359 12.6953 27.75 12.6953 27.6328C12.6953 27.5313 12.8125 27.4453 12.9688 27.4453C13.1172 27.4297 13.2578 27.5156 13.2578 27.6328ZM12.1875 27.5469C12.1562 27.6484 12 27.6953 11.8672 27.6484C11.7188 27.6172 11.6172 27.5 11.6484 27.3984C11.6797 27.2969 11.8359 27.25 11.9688 27.2812C12.125 27.3281 12.2266 27.4453 12.1875 27.5469ZM11.2266 27.125C11.1562 27.2109 11.0078 27.1953 10.8906 27.0781C10.7734 26.9766 10.7422 26.8281 10.8203 26.7578C10.8906 26.6719 11.0391 26.6875 11.1562 26.8047C11.2578 26.9062 11.2969 27.0625 11.2266 27.125ZM10.5156 26.4141C10.4453 26.4609 10.3125 26.4141 10.2266 26.2969C10.1406 26.1797 10.1406 26.0469 10.2266 25.9922C10.3125 25.9219 10.4453 25.9766 10.5156 26.0938C10.6016 26.2109 10.6016 26.3516 10.5156 26.4141ZM10.0078 25.6562C9.9375 25.7266 9.82031 25.6875 9.73438 25.6094C9.64844 25.5078 9.63281 25.3906 9.70312 25.3359C9.77344 25.2656 9.89062 25.3047 9.97656 25.3828C10.0625 25.4844 10.0781 25.6016 10.0078 25.6562ZM9.48438 25.0781C9.45312 25.1484 9.35156 25.1641 9.26562 25.1094C9.16406 25.0625 9.11719 24.9766 9.14844 24.9062C9.17969 24.8594 9.26562 24.8359 9.36719 24.875C9.46875 24.9297 9.51562 25.0156 9.48438 25.0781Z"
+                                    fill="#FCFCFC" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/thiago-santos-batista/" target="_blank"><svg width="35"
+                                height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.5 2.5H2.49219C1.11719 2.5 0 3.63281 0 5.02344V34.9766C0 36.3672 1.11719 37.5 2.49219 37.5H32.5C33.875 37.5 35 36.3672 35 34.9766V5.02344C35 3.63281 33.875 2.5 32.5 2.5ZM10.5781 32.5H5.39062V15.7969H10.5859V32.5H10.5781ZM7.98438 13.5156C6.32031 13.5156 4.97656 12.1641 4.97656 10.5078C4.97656 8.85156 6.32031 7.5 7.98438 7.5C9.64062 7.5 10.9922 8.85156 10.9922 10.5078C10.9922 12.1719 9.64844 13.5156 7.98438 13.5156ZM30.0234 32.5H24.8359V24.375C24.8359 22.4375 24.7969 19.9453 22.1406 19.9453C19.4375 19.9453 19.0234 22.0547 19.0234 24.2344V32.5H13.8359V15.7969H18.8125V18.0781H18.8828C19.5781 16.7656 21.2734 15.3828 23.7969 15.3828C29.0469 15.3828 30.0234 18.8438 30.0234 23.3438V32.5Z"
+                                    fill="#FCFCFC" />
+                            </svg>
+                        </a>
+
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+        });
+    </script>
 </body>
 
 </html>
