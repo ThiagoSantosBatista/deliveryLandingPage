@@ -2,7 +2,8 @@
   background: #0f0f0f;
   color: #fcfcfc;
   &-box {
-    padding: 6.4rem 11%;
+    padding: 6.4rem 0;
+    margin: 0 11%;
   }
   &__topo {
     display: flex;
@@ -10,7 +11,7 @@
     align-items: center;
   }
   &__meio {
-    padding: 5rem 0;
+    margin: 5rem 0;
     position: relative;
   }
   &__informacoes {
@@ -55,11 +56,11 @@
     gap: 2rem;
   }
   &__item a {
-    text-transform: uppercase;
-    font-weight: bold;
     font-size: 1.5rem;
-    color: #fcfcfc;
+    font-weight: bold;
     padding: 1rem;
+    text-transform: uppercase;
+    color: #fcfcfc;
   }
   &__redes-list {
     display: flex;
@@ -71,16 +72,16 @@
   }
 }
 .linha {
+  position: absolute;
   width: 100%;
   height: 0.1rem;
   background: #fcfcfc;
-  position: absolute;
   &__topo {
-    top: 3rem;
+    top: -3rem;
     left: 0;
   }
   &__fundo {
-    bottom: 3rem;
+    bottom: -3rem;
     left: 0;
   }
 }

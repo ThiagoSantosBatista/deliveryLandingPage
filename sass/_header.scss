@@ -4,15 +4,18 @@
   left: 0;
   height: 7rem;
   width: 100%;
+  z-index: 10;
   background: hsl(0, 0%, 99%);
   box-shadow: 0 0.1rem 1rem rgb(0, 0, 0, 0.25);
-  z-index: 10;
+   .container{
+    height: 100%;
+   }
   &-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 0 11%;
+    margin: 0 11%;
   }
   &__nav-list {
     display: flex;
@@ -20,23 +23,22 @@
     gap: 2.5rem;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    color: black;
   }
   &__nav-item {
     a {
-      color: black;
+      color: #0f0f0f;
     }
     &--laranja a {
       color: #ff6700;
     }
     & button {
       cursor: pointer;
-      padding: 1.4rem;
       font-size: 1.5rem;
       letter-spacing: 0.1rem;
-      border: .2rem solid #ff6700;
+      padding: 1.4rem;
+      border-radius: 0.5rem;
+      border: 0.2rem solid #ff6700;
       background: #fcfcfc;
-      border-radius: .5rem;
       a {
         color: #ff6700;
       }

@@ -4,19 +4,19 @@
   height: 100vh;
   max-height: 70rem;
   background: linear-gradient(rgb(28, 37, 44, 0.9), rgba(28, 37, 44, 0.15)),
-    url(/img/home-bg.png);
+    url(/img/home-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   &__conteudo {
-    color: #fcfcfc;
     text-align: center;
+    color: #fcfcfc;
     h1 {
       font-family: $font-titulos;
       font-size: clamp(3rem, 3.7vw, 6rem);
-      margin-bottom: 1.8rem;
-      letter-spacing: -0.2rem;
       line-height: 1.2;
+      letter-spacing: -0.2rem;
+      margin-bottom: 1.8rem;
     }
     p {
       font-size: 2.3rem;
@@ -25,18 +25,13 @@
       color: #ebebeb;
     }
     button {
-      display: inline-block;
       cursor: pointer;
-      align-items: center;
-      letter-spacing: 0.1rem;
-      padding: 1.5rem;
       font-size: 1.8rem;
-      border-radius: 0.5rem;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+      padding: 1.5rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+      border: none;
       color: #fcfcfc;
       background: #ff6700;
-      border: none;
     }
   }
   &__form {
@@ -44,13 +39,13 @@
     justify-content: center;
     width: 100%;
     &__input {
-      width: 80%;
-      height: 5.273rem;
       display: flex;
       align-items: center;
       gap: 1.5rem;
+      width: 80%;
+      height: 5.273rem;
       padding: 0 1.5rem;
-      border-radius: 0.5rem;
+      border-radius: 0.5rem 0 0 0.5rem;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       background: #fcfcfc;
@@ -61,13 +56,9 @@
       input {
         width: 100%;
         height: 100%;
+        font-size: 1.4rem;
         padding: 0.5rem 0;
         border: none;
-        border-radius: 0.5rem;
-        font-size: 1.4rem;
-        width: 100%;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
         &:focus {
           outline: none;
         }
@@ -81,32 +72,33 @@
 }
 
 .vantagens {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4.5rem;
-  justify-content: center;
-  padding: 8rem 11%;
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    justify-content: center;
+    margin: 8rem 11%;
+  }
   &__conteudo-box {
     display: grid;
     grid-template-rows: repeat(3, auto);
-    max-width: 28rem;
+    max-width: 24rem;
     border-radius: 2rem;
-    padding: 2rem;
     img {
       margin-bottom: 2.5rem;
       max-height: 5rem;
       width: auto;
     }
     h3 {
-      color: #0f0f0f;
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 1rem;
+      color: #0f0f0f;
     }
     p {
-      color: rgba(28, 37, 44, 0.7);
       font-size: 1.6rem;
       line-height: 1.5;
+      color: rgba(28, 37, 44, 0.7);
     }
   }
 }
@@ -119,10 +111,11 @@
     align-items: center;
     justify-items: center;
     gap: 10rem;
-    padding: 6.6rem 11%;
+    margin: 0 11%;
+    padding: 6.4rem 0;
     img {
-      height: 59rem;
       object-fit: cover;
+      height: 59rem;
       border-radius: 0.5rem;
     }
   }
@@ -130,19 +123,19 @@
     color: #fcfcfc;
     max-width: 50rem;
     h2 {
-      font-size: 3.5rem;
       font-family: $font-titulos;
+      font-size: 3.5rem;
       margin-bottom: 3.7rem;
       text-transform: uppercase;
       position: relative;
       &::after {
         content: "";
-        width: 7rem;
-        height: 0.2rem;
-        background: #ff6700;
         position: absolute;
         bottom: -1rem;
         left: 0;
+        width: 7rem;
+        height: 0.2rem;
+        background: #ff6700;
       }
     }
     p {
@@ -155,20 +148,24 @@
       margin-bottom: 1rem;
     }
     button {
-      background: #ff6700;
-      border: 0.2rem solid #fcfcfc;
-      color: #fcfcfc;
-      font-size: 1.8rem;
       cursor: pointer;
+      font-size: 1.8rem;
       padding: 1rem 2.5rem;
       border-radius: 0.5rem;
-      box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.2);
+      color: #fcfcfc;
+      background: #ff6700;
+      border: 0.2rem solid #fcfcfc;
     }
   }
 }
 
 .produtos {
-  padding: 12.8rem 11%;
+  &-box {
+    margin: 12.8rem 11%;
+    & div.produtos__conteudo:nth-child(2) {
+      margin-bottom: 7rem;
+    }
+  }
   &__titulo {
     grid-column: 1/-1;
     h2 {
@@ -180,13 +177,13 @@
       position: relative;
       &::after {
         content: "";
-        width: 7rem;
-        height: 0.2rem;
-        background: #ff6700;
         position: absolute;
         bottom: -1rem;
         left: 50%;
+        width: 7rem;
+        height: 0.2rem;
         transform: translateX(-50%);
+        background: #ff6700;
       }
     }
   }
@@ -195,19 +192,16 @@
     grid-template-rows: auto auto;
     gap: 3rem;
     position: relative;
-    &--margin {
-      margin-bottom: 7rem;
-    }
     h3 {
       font-size: 2rem;
     }
-    a {
-      font-size: 1.4rem;
-      color: #ff6700;
-      font-weight: bold;
+    &__ver-mais {
       position: absolute;
       top: 0.4rem;
       right: 0;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ff6700;
     }
   }
   &__items {
@@ -218,12 +212,13 @@
   &__card {
     display: grid;
     grid-template-rows: auto auto;
+    border-radius: .5rem;
     box-shadow: 0 0.5rem 0.5rem rgb(0, 0, 0, 0.2);
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
     img {
+      object-fit: cover;
       width: 100%;
       height: 20rem;
+      border-radius: .5rem .5rem 0 0;
     }
     &-conteudo {
       display: grid;
@@ -232,36 +227,34 @@
       gap: 1rem;
       height: 15rem;
       padding: 2rem;
-      border-bottom-right-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem;
       h4 {
         font-size: 1.7rem;
       }
       p {
-        font-size: 1.4rem;
         grid-column: 1/-1;
+        font-size: 1.4rem;
       }
       .classificacao {
         display: flex;
         justify-self: right;
         align-items: center;
-        color: #eead2d;
+        gap: 0.5rem;
         font-size: 1.5rem;
         font-weight: bold;
-        gap: 0.5rem;
+        color: #eead2d;
         img {
           height: 1.5rem;
           width: 1.5rem;
         }
       }
       button {
-        padding: 1rem;
-        background: #ff6700;
-        color: #fcfcfc;
         cursor: pointer;
+        border: none;
+        padding: 1rem;
         letter-spacing: 0.1rem;
         border-radius: 0.5rem;
-        border: none;
+        background: #ff6700;
+        color: #fcfcfc;
       }
       .preco {
         align-self: end;
@@ -273,10 +266,11 @@
 }
 
 .depoimentos {
-  background: #1c252c;
   margin-bottom: 9.6rem;
-  .container {
-    padding: 9.6rem 11%;
+  background: #1c252c;
+  &-box {
+    padding: 9.6rem 0;
+    margin: 0 11%;
   }
   h2 {
     font-size: 3.5rem;
@@ -288,30 +282,30 @@
     position: relative;
     &::after {
       content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -1rem;
       width: 7rem;
       height: 0.2rem;
-      background: #ff6700;
-      position: absolute;
-      bottom: -1rem;
-      left: 50%;
       transform: translateX(-50%);
+      background: #ff6700;
     }
   }
-  &-box {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-  }
+}
+.card-box {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: #fcfcfc;
-  padding: 8rem 4rem 2rem 4rem;
+  padding: 8rem 4rem 2rem;
   max-width: 47rem;
   border-radius: 0.5rem;
+  background: #fcfcfc;
   position: relative;
   p {
     font-size: 1.7rem;
@@ -319,13 +313,14 @@
   }
   .circulo {
     position: absolute;
-    inset: 0 0 0 50%;
+    top: 0;
+    left: 50%;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
     transform: translate(-50%, -50%);
     background: #ebebeb;
     border: 0.1rem solid #0f0f0f;
-    border-radius: 50%;
-    height: 11rem;
-    width: 11rem;
     img {
       height: 10.8rem;
     }
