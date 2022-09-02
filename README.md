@@ -5,7 +5,7 @@ Esse projeto trata-se de uma Landing Page para uma empresa fictícia de delivery
 O projeto está responsivo e para desenvolver eu utilizei: HTML, CSS, JS, SASS e a biblioteca AOS.
  
 ##  🖥️ Demonstração
-![](/Resultado/tsbfoods.png)
+![](/resultado/tsbfoods.png)
 
 ## 🔗 Link da página
 https://tsbfoods.netlify.app/
