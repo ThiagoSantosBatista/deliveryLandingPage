@@ -629,13 +629,14 @@ body .laranja {
     z-index: 10;
   }
   .header__nav.ativo .header__nav-item a {
-    padding: 2rem;
+    padding: 1rem 2rem;
     color: #fcfcfc;
   }
   .header__nav.ativo .header__nav-item a.laranja {
     color: #ff6700;
   }
   .header__nav.ativo .header__nav-item button {
+    margin: 0;
     padding: 2rem 4rem;
     color: #fcfcfc;
     background: #ff6700;
@@ -712,6 +713,11 @@ body .laranja {
   .produtos__items {
     grid-template-columns: repeat(auto-fill, minmax(26.85rem, 40rem));
     justify-content: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .vantagens-box {
+    gap: 6rem;
   }
 }
 @media screen and (max-width: 425px) {

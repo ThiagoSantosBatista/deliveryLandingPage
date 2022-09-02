@@ -37,13 +37,14 @@
     }
     .header__nav-item {
       a {
-        padding: 2rem;
+        padding: 1rem 2rem;
         color: $branco;
         &.laranja {
           color: $laranja;
         }
       }
       button {
+        margin: 0;
         padding: 2rem 4rem;
         @include btnLaranja;
       }
@@ -131,6 +132,11 @@
       grid-template-columns: repeat(auto-fill, minmax(26.85rem, 40rem));
       justify-content: center;
     }
+  }
+}
+@media screen and (max-width: 580px) {
+  .vantagens-box {
+    gap: 6rem;
   }
 }
 @media screen and (max-width: 425px) {
