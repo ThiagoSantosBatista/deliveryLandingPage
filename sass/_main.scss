@@ -167,7 +167,8 @@
 
 .produtos {
   &-box {
-    margin: 12.8rem var(--mg-lados);
+    margin: 0 var(--mg-lados);
+    padding: 9.6rem 0;
   }
   &__titulo {
     grid-column: 1/-1;

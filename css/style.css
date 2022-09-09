@@ -306,7 +306,8 @@ a {
 }
 
 .produtos-box {
-  margin: 12.8rem var(--mg-lados);
+  margin: 0 var(--mg-lados);
+  padding: 9.6rem 0;
 }
 .produtos__titulo {
   grid-column: 1/-1;
